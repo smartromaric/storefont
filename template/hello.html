@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- {{nbr_ord}}-->
+ {% for i in produit %}
+<!--<h4>{{i}}</h4>-->
+<!--<h4>{{i.first_name}}</h4>-->
+<h4>id:{{i.id}}-name:{{i.customer.first_name}}-{{i.orderitem_set__product}}</h4>
+
+<!--<h4>{{i.email}}</h4>-->
+{%endfor%}
+{%for i in prod%}
+<h5>{{i.title}}</h5>
+{%endfor%}
+</body>
+</html>
